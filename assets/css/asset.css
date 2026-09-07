@@ -1,0 +1,216 @@
+.optbox {
+  background-color:#1b1b1b;
+  padding:30px 20px 30px;
+  text-align: left;
+  color:#fff;
+  width: auto;
+}
+
+.optcta {
+  font-weight:700;
+  font-size:2em;
+  margin: 0px 0px 20px 0px;
+}
+
+.optbox input[type=text] {
+  border-radius:0;
+  border: none;
+  color:#FFF;
+  height:50px;
+  width:100%;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  padding:0 20px;
+  background-color: #818181!important;
+}
+
+.optbox input[type=submit] {
+  background-color:#95c205;
+  background-image:none;
+  border-radius:0;
+  border:0;
+  color:#fff;
+  text-shadow:none!important;
+  font-size:34px;
+  height:60px;
+  width:80%;
+  padding:0 6px;
+  margin-top: 20px!important;
+  margin-bottom: 10px!important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.optbox input[type=submit]:hover {
+  background-color:#88b105;
+  transition: background-color .35s ease 0s;
+}
+
+.af-clear
+{
+clear:both;
+}
+
+.af-element
+{
+margin-top: 20px;
+}
+
+.optbox p
+{
+margin: 0px;
+  padding: 0px;
+}
+
+.previewLabel
+{
+cursor: default!important;
+}
+
+/* Hide theme Twitter layers */
+li.twitter .ui-socialbar-background,
+li.twitter .ui-socialbar-image {
+    background: none !important;
+    position: relative;
+}
+
+
+li.twitter a.ui-socialbar-image {
+    position: relative;
+}
+
+/* Center the X logo perfectly */
+li.twitter a.ui-socialbar-image {
+    position: relative;
+}
+
+li.twitter a.ui-socialbar-image::after {
+     content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 22px;
+    height: 22px;
+    background: url("https://pearlwaterlessinternational.com/wp-content/uploads/2026/02/logo-black.png") no-repeat center center;
+    background-size: contain;
+
+    /* START POSITION */
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Force purple background on hover */
+.ui-socialbar-item:hover,
+.ui-socialbar-item.ui--gradient-grey:hover {
+    background: #730b86 !important;
+    background-image: none !important;
+}
+
+
+/* Turn X white on hover */
+li.twitter:hover a.ui-socialbar-image::after {
+    transform: translate(-50%, -50%);
+    filter: brightness(0) invert(1);
+}
+
+
+
+
+/* Remove original Twitter icon background */
+li.twitter .ui-socialbar-background {
+    background-image: none !important;
+}
+
+/* Insert black X as the main background */
+li.twitter .ui-socialbar-background {
+    background: url("https://pearlwaterlessinternational.com/wp-content/uploads/2026/02/logo-black.png") no-repeat center !important;
+    background-size: 22px 22px !important;
+}
+
+/* Purple hover background while letting the theme animate */
+li.twitter.ui-socialbar-item.ui--animation:hover .ui-socialbar-background {
+    background: url("https://pearlwaterlessinternational.com/wp-content/uploads/2026/02/logo-black.png") no-repeat center !important;
+    background-size: 22px 22px !important;
+}
+
+/* Turn the logo white on hover */
+li.twitter.ui-socialbar-item.ui--animation:hover .ui-socialbar-background {
+    filter: brightness(0) invert(1);
+}
+
+.ui--icon-box-text p {
+  color: #ffffff !important;
+  font-size: 18px !important;
+}
+
+.wpcf7-form p {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  font-weight: 600;
+}
+
+
+.wpcf7-form {
+  background: rgba(0, 0, 0, 0.4); /* adjust this */
+  padding: 25px;
+  border-radius: 6px;
+}
+
+.wpcf7-submit {
+  background: linear-gradient(135deg, #7b2cff, #a64dff);
+  color: #ffffff !important;
+  font-size: 18px;
+  font-weight: 700;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.wpcf7-submit:hover {
+  background: linear-gradient(135deg, #6a1fe0, #9333ea);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(123, 44, 255, 0.4);
+}
+
+.ui--highlight.highlight_1 {
+  color: #ffffff !important;
+  font-size: 18px !important;
+  display: block;
+  margin-top: 20px;
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.ui--highlight.highlight_1[style] {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+.ui--highlight.highlight_1 {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+.ui--highlight.highlight_1 {
+  background: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.ui--highlight.highlight_1::before,
+.ui--highlight.highlight_1::after {
+  display: none !important;
+  content: none !important;
+}
+
+.ui--highlight.highlight_1,
+.ui--highlight.highlight_1 * {
+  background: transparent !important;
+  background-color: transparent !important;
+}

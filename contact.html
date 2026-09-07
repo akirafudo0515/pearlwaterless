@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>顧客服務與線上訂購諮詢｜Pearl 珍珠環保免水洗車</title>
+  <meta name="description" content="立即洽詢英國 Pearl Global Ltd 官方授權台灣客服。四大核心旗艦配方現貨供應、施工指導、現貨快速出貨與售後諮詢。">
+  <link rel="icon" type="image/png" href="assets/images/favicon-16x16.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 頂部通知公告列 -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span class="top-bar-badge">英國原裝進口</span>
+        <span>BS EN ISO 9001:2015 &amp; ISO 14001:2015 原廠正品保證</span>
+      </div>
+      <div class="top-bar-right">
+        <span>全台現貨快速出貨</span>
+        <span>•</span>
+        <span>愛車族與社區大樓免水洗車首選</span>
+        <span>•</span>
+        <span>免付費服務專線：0800-880-999</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主導航欄 (Header) -->
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand-logo">
+        <img src="assets/images/pearlwaterlesslogo.png" alt="Pearl Waterless 珍珠環保免水洗車" class="brand-logo-img">
+        <div class="brand-info">
+          <span class="brand-text-en">PEARL WATERLESS</span>
+          <span class="brand-text-zh">珍珠環保免水洗車 · 台灣官方</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">官方首頁</a></li>
+          <li><a href="products.html">產品全系列</a></li>
+          <li><a href="eco-technology.html">綠色節水生活</a></li>
+          <li><a href="faq.html">常見問答</a></li>
+          <li><a href="contact.html" class="active">聯絡我們／訂購</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="products.html" class="btn btn-primary">立即選購商品</a>
+        <button class="mobile-menu-btn" aria-label="切換選單">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 頂部標題 -->
+  <section class="section section-dark" style="padding: 60px 0;">
+    <div class="container text-center" style="text-align: center;">
+      <span class="section-eyebrow" style="color: #34D399;">Customer Service &amp; Inquiries</span>
+      <h1 class="section-title">顧客服務與線上商品訂購諮詢</h1>
+      <p class="section-subtitle" style="max-width: 720px; margin: 0 auto;">
+        無論您是剛接觸免水洗車的新手車友，或想諮詢特定配方的使用手法與現貨訂購，我們的專業客服專員將於 24 小時內竭誠為您服務。
+      </p>
+    </div>
+  </section>
+
+  <!-- 聯絡表單與資訊欄 -->
+  <section class="section">
+    <div class="container">
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+        
+        <!-- 左側：需求諮詢表單 -->
+        <div class="contact-form">
+          <h2 style="font-size: 24px; color: var(--primary-navy); margin-bottom: 8px;">填寫諮詢或訂購需求</h2>
+          <p style="font-size: 14px; color: var(--text-muted); margin-bottom: 24px;">
+            請填寫下列資訊，客服專員將於營業時間透過電話或 Email 迅速為您解答並提供專屬選購建議。
+          </p>
+
+          <form id="inquiry-form">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="name">您的姓名 *</label>
+                <input type="text" id="name" class="form-control" placeholder="例：林先生 / 王小姐" required>
+              </div>
+
+              <div class="form-group">
+                <label for="car-model">愛車車款與車色</label>
+                <input type="text" id="car-model" class="form-control" placeholder="例：黑色 RAV4 / 白色 Model Y">
+              </div>
+            </div>
+
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+              <div class="form-group">
+                <label for="phone">聯絡電話 / 行動電話 *</label>
+                <input type="tel" id="phone" class="form-control" placeholder="例：0912-345-678" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">電子郵件信箱 *</label>
+                <input type="email" id="email" class="form-control" placeholder="例：yourname@gmail.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="interest">諮詢項目類別 *</label>
+              <select id="interest" class="form-control" required>
+                <option value="">-- 請選擇您的諮詢主題 --</option>
+                <option value="starter">四大商品選購推薦與使用指南</option>
+                <option value="ordering">現貨庫存、訂購方式與超商/宅配配送進度</option>
+                <option value="technique">不同車漆或髒污狀況的使用手法諮詢</option>
+                <option value="warranty">商品售後保固與退換貨服務</option>
+                <option value="other">其他個人愛車保養疑問</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="product-choice">感興趣的商品品項</label>
+              <select id="product-choice" class="form-control">
+                <option value="ultra-nano">Advanced Ultra Nano (紫精靈 750ml - 洗車打蠟三合一)</option>
+                <option value="professional">Pearl Professional (綠精靈 750ml - 去油膜水晶透亮)</option>
+                <option value="universal">Universal Cleaner (水精靈 750ml - 萬能內裝全車去污)</option>
+                <option value="tyreshine">Eco Tyre Shine (白精靈 750ml - 水性不甩油輪胎亮光)</option>
+                <option value="all-kit">四大旗艦商品全套組合 (紫精靈+綠精靈+水精靈+白精靈)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">詳細問題或備註需求</label>
+              <textarea id="message" class="form-control" rows="4" placeholder="請描述您的車況（如常停室外/地下室、車色、特殊污垢問題），或您期望了解的產品細節..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; padding: 14px; font-size: 16px;">
+              確認送出諮詢訊息
+            </button>
+            <p style="font-size: 12px; color: var(--text-muted); margin-top: 10px; text-align: center;">
+              * 我們重視您的隱私，您的資料僅用於本次 Pearl 顧客服務與訂購諮詢回覆。
+            </p>
+          </form>
+        </div>
+
+        <!-- 右側：聯繫資訊與特點卡片 -->
+        <div style="display: flex; flex-direction: column; gap: 24px;">
+          
+          <div style="background: var(--bg-light); border-radius: 16px; border: 1px solid var(--border-color); padding: 32px;">
+            <h3 style="font-size: 20px; color: var(--primary-navy); margin-bottom: 16px;">Pearl 珍珠環保免水洗車 · 台灣客服中心</h3>
+            
+            <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; color: var(--text-secondary);">
+              <div>
+                <b style="color: var(--primary-navy); display: block; margin-bottom: 2px;">全台免付費客戶服務專線</b>
+                <span style="font-size: 20px; font-weight: 700; color: var(--accent-emerald-dark);">0800-880-999</span>
+                <span style="font-size: 12px; color: var(--text-muted); display: block;">（週一至週五 09:00 - 18:00，國定假日除外）</span>
+              </div>
+
+              <div>
+                <b style="color: var(--primary-navy); display: block; margin-bottom: 2px;">顧客服務信箱</b>
+                <a href="mailto:service@pearlwaterless.tw" style="color: var(--accent-emerald-dark); font-weight: 600;">service@pearlwaterless.tw</a>
+              </div>
+
+              <div>
+                <b style="color: var(--primary-navy); display: block; margin-bottom: 2px;">台灣發貨物流倉</b>
+                <span>新北市中和區中正路218-7號</span>
+                <span style="font-size: 12px; color: var(--text-muted); display: block;">全台現貨快速出貨，支援黑貓宅配與超商取貨付款</span>
+              </div>
+
+              <div>
+                <b style="color: var(--primary-navy); display: block; margin-bottom: 2px;">英國製造總部</b>
+                <span>Pearl Global Ltd, Manchester, United Kingdom.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 正品保障卡片 -->
+          <div style="background: linear-gradient(135deg, var(--primary-navy) 0%, #173B63 100%); border-radius: 16px; padding: 32px; color: #fff;">
+            <h3 style="font-size: 20px; color: #fff; margin-bottom: 14px;">100% 英國原裝正品保障</h3>
+            <p style="font-size: 14px; color: #CBD5E1; line-height: 1.6; margin-bottom: 20px;">
+              本站為英國 Pearl Global Ltd 官方授權之台灣服務窗口。所有商品均為英國本土曼徹斯特工廠生產、原裝進口，符合歐盟最高環保安全標準。
+            </p>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 13.5px; color: #E2E8F0;">
+              <li>✓ 全系列商品投保 2,000 萬元產品責任險</li>
+              <li>✓ 英國 BS EN ISO 9001:2015 品質認證</li>
+              <li>✓ 英國 BS EN ISO 14001:2015 環保認證</li>
+              <li>✓ 隨貨附贈新手施工指導說明手冊</li>
+            </ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- 頁腳 Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+            <img src="assets/images/pearlwaterlesslogo.png" alt="Pearl Logo" style="height: 42px; width: auto; background: #fff; padding: 4px 8px; border-radius: 6px;">
+            <div>
+              <div style="color: #fff; font-weight: 800; font-size: 16px; letter-spacing: 1px;">PEARL WATERLESS</div>
+              <div style="color: #34D399; font-size: 12px; font-weight: 600;">珍珠環保免水洗車 · 台灣</div>
+            </div>
+          </div>
+          <p style="font-size: 13.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 20px;">
+            英國 Pearl Global Ltd 成立於曼徹斯特，為歐洲免水洗車與先進奈米防護化工先驅品牌。產品 100% 英國本土研發製造，嚴格遵行 ISO 9001/14001 與歐盟 REACH 標準，熱銷全球逾 100 國。
+          </p>
+          <div style="display: flex; gap: 12px; align-items: center;">
+            <img src="assets/images/iso9001-14001-lightnew.png" alt="ISO" style="height: 36px; opacity: 0.9;">
+            <img src="assets/images/Pearl-Waterless-International-working-in-harmony-with-nature.jpg" alt="Harmony with Nature" style="height: 36px; border-radius: 4px; opacity: 0.9;">
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>網站導航</h4>
+          <ul>
+            <li><a href="index.html">官方首頁</a></li>
+            <li><a href="products.html">產品全系列目錄</a></li>
+            <li><a href="eco-technology.html">綠色節水生活實測</a></li>
+            <li><a href="faq.html">常見問答 FAQ</a></li>
+            <li><a href="contact.html">聯絡我們／線上諮詢</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>四大核心旗艦配方</h4>
+          <ul>
+            <li><a href="products.html#ultra-nano">Advanced Ultra Nano (紫精靈)</a></li>
+            <li><a href="products.html#professional">Pearl Professional (綠精靈)</a></li>
+            <li><a href="products.html#universal">Universal Cleaner (水精靈萬能清潔)</a></li>
+            <li><a href="products.html#tyreshine">Eco Tyre Shine (白精靈輪胎亮澤)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>台灣顧客服務與售後</h4>
+          <p style="font-size: 13.5px; color: #CBD5E1; line-height: 1.6; margin-bottom: 12px;">
+            <b>服務對象：</b>個人愛車族、DIY 汽車美容愛好者、社區大樓住戶。
+          </p>
+          <div style="font-size: 13.5px; color: #94A3B8; display: flex; flex-direction: column; gap: 6px;">
+            <span>📍 台灣發貨倉與客戶服務中心：新北市中和區中正路218-7號</span>
+            <span>✉️ 顧客服務信箱：service@pearlwaterless.tw</span>
+            <span>📞 免付費服務專線：0800-880-999</span>
+            <span>📦 現貨供應：下單後 1~2 個工作日快速寄達</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Pearl Waterless International Ltd &amp; 珍珠環保免水洗車 台灣官方版權所有。</div>
+        <div style="color: #64748B;">
+          英國製造 · 曼徹斯特原裝進口 · 符合歐盟 CLP / REACH 環保標準
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
