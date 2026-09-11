@@ -80,7 +80,7 @@
   <section class="section">
     <div class="container">
       
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 48px; align-items: start;">
+      <div class="contact-layout">
         
         <!-- 左側：需求諮詢表單 -->
         <div class="contact-form">
@@ -90,7 +90,7 @@
           </p>
 
           <form id="inquiry-form">
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-row">
               <div class="form-group">
                 <label for="name">您的姓名 *</label>
                 <input type="text" id="name" class="form-control" placeholder="例：林先生 / 王小姐" required>
@@ -102,7 +102,7 @@
               </div>
             </div>
 
-            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+            <div class="form-row">
               <div class="form-group">
                 <label for="phone">聯絡電話 / 行動電話 *</label>
                 <input type="tel" id="phone" class="form-control" placeholder="例：0912-345-678" required>
@@ -153,9 +153,9 @@
         </div>
 
         <!-- 右側：聯繫資訊與特點卡片 -->
-        <div style="display: flex; flex-direction: column; gap: 24px;">
+        <div class="contact-aside">
           
-          <div style="background: var(--bg-light); border-radius: 16px; border: 1px solid var(--border-color); padding: 32px;">
+          <div class="contact-info-card">
             <h3 style="font-size: 20px; color: var(--primary-navy); margin-bottom: 16px;">Pearl 珍珠環保免水洗車 · 台灣客服中心</h3>
             
             <div style="display: flex; flex-direction: column; gap: 14px; font-size: 14.5px; color: var(--text-secondary);">
@@ -190,7 +190,7 @@
           </div>
 
           <!-- 正品保障卡片 -->
-          <div style="background: linear-gradient(135deg, var(--primary-navy) 0%, #173B63 100%); border-radius: 16px; padding: 32px; color: #fff;">
+          <div class="contact-guarantee-card">
             <h3 style="font-size: 20px; color: #fff; margin-bottom: 14px;">100% 英國原裝正品保障</h3>
             <p style="font-size: 14px; color: #CBD5E1; line-height: 1.6; margin-bottom: 20px;">
               本站為英國 Pearl Global Ltd 官方授權之台灣服務窗口。所有商品均為英國本土曼徹斯特工廠生產、原裝進口，符合歐盟最高環保安全標準。

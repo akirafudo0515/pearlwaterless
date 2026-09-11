@@ -129,11 +129,23 @@ document.addEventListener('DOMContentLoaded', () => {
       const isExpanded = navLinks.classList.contains('active');
       mobileBtn.setAttribute('aria-expanded', isExpanded);
       mobileBtn.textContent = isExpanded ? '✕' : '☰';
+      document.body.style.overflow = isExpanded ? 'hidden' : '';
       if (!isExpanded) {
         navLinks.querySelectorAll('.nav-item-dropdown.open').forEach((item) => {
           item.classList.remove('open');
         });
       }
+    });
+
+    navLinks.querySelectorAll('a[href]:not(.dropdown-toggle)').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (window.matchMedia('(max-width: 992px)').matches) {
+          navLinks.classList.remove('active');
+          document.body.style.overflow = '';
+          mobileBtn.textContent = '☰';
+          mobileBtn.setAttribute('aria-expanded', 'false');
+        }
+      });
     });
   }
 
