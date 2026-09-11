@@ -129,8 +129,43 @@ document.addEventListener('DOMContentLoaded', () => {
       const isExpanded = navLinks.classList.contains('active');
       mobileBtn.setAttribute('aria-expanded', isExpanded);
       mobileBtn.textContent = isExpanded ? '✕' : '☰';
+      if (!isExpanded) {
+        navLinks.querySelectorAll('.nav-item-dropdown.open').forEach((item) => {
+          item.classList.remove('open');
+        });
+      }
     });
   }
+
+  // 2b. 產品說明下拉選單（手機點擊切換）
+  const dropdownItems = document.querySelectorAll('.nav-item-dropdown');
+  dropdownItems.forEach((item) => {
+    const toggle = item.querySelector('.dropdown-toggle');
+    if (!toggle) return;
+    toggle.addEventListener('click', (e) => {
+      const isMobile = window.matchMedia('(max-width: 992px)').matches;
+      if (!isMobile) return;
+      e.preventDefault();
+      const willOpen = !item.classList.contains('open');
+      dropdownItems.forEach((other) => {
+        if (other !== item) other.classList.remove('open');
+      });
+      item.classList.toggle('open', willOpen);
+    });
+  });
+
+  // 2c. 知識交流區文章卡片展開
+  document.querySelectorAll('.article-toggle').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const card = btn.closest('.article-card');
+      if (!card) return;
+      const willOpen = !card.classList.contains('open');
+      document.querySelectorAll('.article-card.open').forEach((other) => {
+        if (other !== card) other.classList.remove('open');
+      });
+      card.classList.toggle('open', willOpen);
+    });
+  });
 
   // 3. 產品類別過濾 (Category Filter on products.html)
   const filterBtns = document.querySelectorAll('.filter-btn');
